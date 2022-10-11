@@ -12,7 +12,6 @@ import java.util.List;
 @RequestMapping
 @RequiredArgsConstructor
 public class UserController {
-
     private final UserService userService;
 
     @GetMapping("/get")
