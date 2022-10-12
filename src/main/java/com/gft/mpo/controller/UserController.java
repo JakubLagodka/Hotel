@@ -13,7 +13,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class UserController {
     private final UserService userService;
-
     @GetMapping("/get")
     public ResponseEntity<List<User>> fetchUsers(String username){
         return ResponseEntity.ok(userService.findAllUsers(username));
