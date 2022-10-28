@@ -1,6 +1,6 @@
-package com.gft.mpo.controller;
+package pl.lagodka.userApplication.controller;
 
-import com.gft.mpo.exception.UserNotFoundException;
+import pl.lagodka.userApplication.exception.UserNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;

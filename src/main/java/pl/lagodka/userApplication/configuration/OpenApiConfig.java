@@ -1,4 +1,4 @@
-package com.gft.mpo.configuration;
+package pl.lagodka.userApplication.configuration;
 
 
 

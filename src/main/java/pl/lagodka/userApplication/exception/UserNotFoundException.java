@@ -1,4 +1,4 @@
-package com.gft.mpo.exception;
+package pl.lagodka.userApplication.exception;
 
 public class UserNotFoundException extends RuntimeException {
     public UserNotFoundException(){

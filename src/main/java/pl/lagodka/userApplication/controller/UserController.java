@@ -1,7 +1,7 @@
-package com.gft.mpo.controller;
+package pl.lagodka.userApplication.controller;
 
-import com.gft.mpo.model.User;
-import com.gft.mpo.service.UserService;
+import pl.lagodka.userApplication.model.User;
+import pl.lagodka.userApplication.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

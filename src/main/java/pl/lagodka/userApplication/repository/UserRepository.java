@@ -1,6 +1,6 @@
-package com.gft.mpo.repository;
+package pl.lagodka.userApplication.repository;
 
-import com.gft.mpo.model.User;
+import pl.lagodka.userApplication.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

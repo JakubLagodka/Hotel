@@ -1,7 +1,7 @@
-package com.gft.mpo.service;
+package pl.lagodka.userApplication.service;
 
-import com.gft.mpo.model.User;
-import com.gft.mpo.repository.UserRepository;
+import pl.lagodka.userApplication.model.User;
+import pl.lagodka.userApplication.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
