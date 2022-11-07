@@ -1,5 +1,4 @@
 package pl.lagodka.userApplication.controller;
-
 import pl.lagodka.userApplication.model.User;
 import pl.lagodka.userApplication.service.UserService;
 import lombok.RequiredArgsConstructor;
