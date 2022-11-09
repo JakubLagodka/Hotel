@@ -5,7 +5,6 @@ import org.hibernate.annotations.GeneratorType;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
-
 @Entity
 @Getter
 @Table(name = "Users")
