@@ -1,5 +1,4 @@
 package pl.lagodka.userApplication.model;
-
 import lombok.Getter;
 import org.hibernate.annotations.GeneratorType;
 
