@@ -4,7 +4,6 @@ import pl.lagodka.userApplication.model.User;
 import pl.lagodka.userApplication.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
