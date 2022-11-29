@@ -12,6 +12,6 @@ public class OpenApiConfig {
                         .description("This is an example MPO business logic pipeline with external REST API call and MPO code editor tool. The application was written in Java using Spring Boot and PostgreSQL as a database.")
                         .version("")
                         .contact(new Contact()
-                                .email("Jakub.Lagodka@gft.c")));
+                                .email("Jakub.Lagodka@gft.")));
     }
 }
