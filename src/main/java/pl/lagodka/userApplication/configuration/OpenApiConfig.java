@@ -9,7 +9,7 @@ public class OpenApiConfig {
         return new OpenAPI()
                 .info(new Info()
                         .title("MPO Api")
-                        .description("This is an example MPO business logic pipeline with external REST API call and MPO code editor tool. The application was written in Java using Spri")
+                        .description("This is an example MPO business logic pipeline with external REST API call and MPO code editor tool. The application was written in Java using Spr")
                         .version("")
                         .contact(new Contact()
                                 .email("")));
