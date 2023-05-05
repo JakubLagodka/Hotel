@@ -9,7 +9,7 @@ public class OpenApiConfig {
         return new OpenAPI()
                 .info(new Info()
                         .title("MPO Api")
-                        .description("This is an example MPO business logic pipeline with external REST API")
+                        .description("This is an example MPO business logic pipeline with external REST AP")
                         .version("")
                         .contact(new Contact()
                                 .email("")));
