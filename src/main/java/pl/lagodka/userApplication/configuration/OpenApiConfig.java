@@ -9,7 +9,7 @@ public class OpenApiConfig {
         return new OpenAPI()
                 .info(new Info()
                         .title("MPO Api")
-                        .description("This is an example MPO business logi")
+                        .description("This is an example MPO business log")
                         .version("")
                         .contact(new Contact()
                                 .email("")));
