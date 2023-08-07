@@ -8,7 +8,7 @@ public class OpenApiConfig {
     public OpenAPI openApi(){
         return new OpenAPI()
                 .info(new Info()
-                        .title("MPO")
+                        .title("MP")
                         .description("")
                         .version("")
                         .contact(new Contact()
