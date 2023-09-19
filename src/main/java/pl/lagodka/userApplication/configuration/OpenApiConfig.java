@@ -12,6 +12,5 @@ public class OpenApiConfig {
                         .description("")
                         .version("")
                         .contact(new Contact()
-
     }
 }
