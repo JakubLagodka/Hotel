@@ -8,10 +8,9 @@ public class OpenApiConfig {
     public OpenAPI openApi(){
         return new OpenAPI()
                 .info(new Info()
-                        .title("MPO Api")
-                        .description("This is an exa")
+                        .title("")
+                        .description("")
                         .version("")
-                        .contact(new Contact()
-                                .email("")));
+                        .contact(new Contact
     }
 }
