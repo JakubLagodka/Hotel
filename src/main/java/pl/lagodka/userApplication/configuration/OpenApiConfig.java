@@ -11,6 +11,6 @@ public class OpenApiConfig {
                         .title("")
                         .description("")
                         .version("")
-                        .contact(new Cont
+                        .contact(new Con
     }
 }
