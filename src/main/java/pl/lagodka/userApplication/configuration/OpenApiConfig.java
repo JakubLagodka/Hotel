@@ -10,6 +10,5 @@ public class OpenApiConfig {
                 .info(new Info()
                         .title("")
                         .description("")
-        
     }
 }
