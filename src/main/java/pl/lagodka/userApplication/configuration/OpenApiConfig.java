@@ -7,6 +7,5 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI openApi(){
         return new OpenAPI()
-
     }
 }
