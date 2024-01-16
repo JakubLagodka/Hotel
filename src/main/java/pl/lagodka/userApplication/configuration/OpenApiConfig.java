@@ -6,6 +6,5 @@ import org.springframework.context.annotation.Bean;
 public class OpenApiConfig {
     @Bean
     public OpenAPI openApi(){
-
     }
 }
