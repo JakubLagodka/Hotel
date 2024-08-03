@@ -1,4 +1,4 @@
 package pl.lagodka.userApplication.configuration;
 import io.swagger.v3.oas.models.OpenAPI;
-import io.swagger.v3.oas.models.inf
+import io.swagger.v3.oas.models.in
 public class OpenApiConfig {}
