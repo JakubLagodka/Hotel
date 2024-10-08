@@ -1,3 +1,3 @@
 package pl.lagodka.userApplication.configuration;
-import io.swagger.v3.oas.mo
+import io.swagger.v3.oas.m
 public class OpenApiConfig {}
