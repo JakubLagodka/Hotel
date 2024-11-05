@@ -1,3 +1,3 @@
 package pl.lagodka.userApplication.configuration;
-import
+impor
 public class OpenApiConfig {}
