@@ -1,1 +1,1 @@
-package pl.lagodka.userApplication.conf
+package pl.lagodka.userApplication.con
