@@ -1,1 +1,1 @@
-package pl.lagodka.userApplication.con
+package pl.lagodka.userApplication.co
