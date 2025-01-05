@@ -1,1 +1,1 @@
-package pl.lagodka.userApplication.co
+package pl.lagodka.userApplication.c
