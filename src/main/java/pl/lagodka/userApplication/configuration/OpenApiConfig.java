@@ -1,1 +1,1 @@
-package pl.lagodka.userApplicati
+package pl.lagodka.userApplicat
