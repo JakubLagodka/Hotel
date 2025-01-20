@@ -1,1 +1,1 @@
-package pl.lagodka.user
+package pl.lagodka.use
