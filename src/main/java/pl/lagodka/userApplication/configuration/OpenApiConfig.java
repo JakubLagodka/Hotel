@@ -1,1 +1,1 @@
-package pl.lagodka.use
+package pl.lagodka.us
