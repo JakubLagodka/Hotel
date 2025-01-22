@@ -1,1 +1,1 @@
-package pl.lagodka.us
+package pl.lagodka.u
