@@ -1,1 +1,1 @@
-package pl.lagodka
+package pl.lagodk
