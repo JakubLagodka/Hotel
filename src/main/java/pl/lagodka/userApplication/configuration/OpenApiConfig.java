@@ -1,1 +1,1 @@
-package pl.lagodk
+package pl.lagod
