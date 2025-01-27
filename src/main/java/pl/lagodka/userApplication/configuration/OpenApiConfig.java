@@ -1,1 +1,1 @@
-package pl.lagod
+package pl.lago
