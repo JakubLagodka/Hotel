@@ -1,1 +1,1 @@
-package pl.
+package pl
