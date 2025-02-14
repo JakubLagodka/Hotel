@@ -11,4 +11,3 @@ public class ControllerAdvice {
     public ResponseEntity<Void> handleUserNotFoundException() {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
-}
