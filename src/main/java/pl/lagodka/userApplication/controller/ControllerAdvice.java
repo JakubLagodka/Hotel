@@ -10,4 +10,3 @@ public class ControllerAdvice {
     @CrossOrigin
     public ResponseEntity<Void> handleUserNotFoundException() {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-    
