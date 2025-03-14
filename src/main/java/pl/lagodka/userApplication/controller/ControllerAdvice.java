@@ -9,4 +9,4 @@ public class ControllerAdvice {
   @ExceptionHandler(value = UserNotFoundException.class)
     @CrossOrigin
     public ResponseEntity<Void> handleUserNotFoundException() {
-        return new ResponseEntity<>(
+        return new ResponseEntity<>
