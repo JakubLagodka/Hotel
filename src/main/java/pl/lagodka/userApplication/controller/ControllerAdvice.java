@@ -8,4 +8,4 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class ControllerAdvice {
   @ExceptionHandler(value = UserNotFoundException.class)
     @CrossOrigin
-    public ResponseEntity<Void> handleUserNotFoundException(
+    public ResponseEntity<Void> handleUserNotFoundException
