@@ -1,0 +1,40 @@
+<form class="comment-form" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+  <div class="form-title-row">
+    <h2>Add Comment</h2>
+    <span class="form-bubble" aria-hidden="true">◉</span>
+  </div>
+
+  <div class="form-body">
+    <label>
+      <span>Name</span>
+      <input type="text" formControlName="name" placeholder="Shaun" autocomplete="name">
+      @if (form.controls.name.touched && form.controls.name.invalid) {
+        <small>Enter at least 2 characters.</small>
+      }
+    </label>
+
+    <label>
+      <span>Email</span>
+      <input type="email" formControlName="email" placeholder="example@gmail.com" autocomplete="email">
+      @if (form.controls.email.touched && form.controls.email.invalid) {
+        <small>Enter a valid email.</small>
+      }
+    </label>
+
+    <label class="message-field">
+      <span>Comment</span>
+      <textarea rows="7" formControlName="body" placeholder="Perspiciatis, dolorum officia quod scythe..."></textarea>
+      @if (form.controls.body.touched && form.controls.body.invalid) {
+        <small>Enter at least 3 characters.</small>
+      }
+    </label>
+  </div>
+
+  <div class="form-actions">
+    <button class="cancel" type="button" (click)="cancel.emit()">Cancel</button>
+    <button class="submit" type="submit" [disabled]="submitting">
+      <span>{{ submitting ? 'Sending…' : 'Wyślij' }}</span>
+      <strong aria-hidden="true">＋</strong>
+    </button>
+  </div>
+</form>
