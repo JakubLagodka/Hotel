@@ -1,0 +1,16 @@
+@if (comments.length) {
+  <div class="comment-stack">
+    @for (comment of comments; track trackById($index, comment)) {
+      <article class="comment">
+        <div class="comment-author">
+          <strong>{{ comment.name }}</strong>
+          <span>{{ comment.email }}</span>
+        </div>
+        <p>{{ comment.body }}</p>
+      </article>
+    }
+  </div>
+} @else {
+  <div class="empty">No comments yet. Be the first one.</div>
+}
+
