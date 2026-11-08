@@ -1,0 +1,12 @@
+<article class="post-card">
+  <a class="card-main" [routerLink]="['/posts', post.id]">
+    <span class="post-icon" aria-hidden="true">{{ iconFor(post.id) }}</span>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+  </a>
+
+  <a class="card-footer" [routerLink]="['/posts', post.id]">
+    <span>Zobacz</span>
+    <strong aria-hidden="true">↗</strong>
+  </a>
+</article>
