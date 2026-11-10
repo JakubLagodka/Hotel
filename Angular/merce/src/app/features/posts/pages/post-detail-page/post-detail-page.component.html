@@ -1,0 +1,47 @@
+<div class="social-stage detail-stage">
+  <div class="stage-inner detail-layout">
+    <header class="masthead">
+      <a class="latest-logo" routerLink="/">LATEST</a>
+    </header>
+
+    <section class="panel-slot">
+      @if (loading$ | async) {
+        <div class="skeleton panel-skeleton"></div>
+      } @else {
+        @if (error$ | async; as error) {
+          <div class="status-card error">{{ error }}</div>
+        }
+        @if (post$ | async; as post) {
+          <article class="post-panel">
+            <div class="panel-topbar">
+              <span class="panel-icon" aria-hidden="true">✱</span>
+              <a class="close" routerLink="/" aria-label="Close post">×</a>
+            </div>
+            <div class="article-copy">
+              <h1>{{ post.title }}</h1>
+              <p>{{ post.body }}</p>
+            </div>
+            @if (!addingComment) {
+              <div class="comments-title">Comments</div>
+              <app-comment-list [comments]="(comments$ | async) ?? []"></app-comment-list>
+              <button class="add-comment" type="button" (click)="showCommentForm()" aria-label="Add comment">＋</button>
+            } @else {
+              <app-comment-form
+                [postId]="post.id"
+                [submitting]="(submitting$ | async) ?? false"
+                (addComment)="addComment($event)"
+                (cancel)="hideCommentForm()">
+              </app-comment-form>
+            }
+          </article>
+        }
+      }
+
+    </section>
+
+    <footer class="brand-footer">
+      <div class="social-centre">SOCIAL:<span>CENTRE</span></div>
+      <div class="merce-logo">'merce</div>
+    </footer>
+  </div>
+</div>
