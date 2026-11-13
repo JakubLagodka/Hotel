@@ -1,0 +1,41 @@
+<div class="social-stage home-stage">
+  <div class="stage-inner home-layout">
+    <header class="masthead">
+      <a class="latest-logo" routerLink="/">LATEST</a>
+    </header>
+
+    @if (posts$ | async; as posts) {
+      <nav class="pager" aria-label="Posts pagination">
+        <button type="button" (click)="previous()" [disabled]="page === 1" aria-label="Previous page">←</button>
+        <strong>{{ twoDigits(page) }}</strong>
+        <span>/{{ twoDigits(pageCount(posts)) }}</span>
+        <button type="button" (click)="next(pageCount(posts))" [disabled]="page === pageCount(posts)" aria-label="Next page">→</button>
+      </nav>
+      <section class="cards-zone">
+        @if (loading$ | async) {
+          <div class="posts-grid">
+            @for (item of [1,2,3,4]; track item) {
+              <div class="skeleton"></div>
+            }
+          </div>
+        } @else {
+          @if (error$ | async; as error) {
+            <div class="status-card error">{{ error }}</div>
+          }
+          <div class="posts-grid">
+            @for (post of visiblePosts(posts); track trackByPostId($index, post)) {
+              <app-post-card
+                [post]="post">
+              </app-post-card>
+            }
+          </div>
+        }
+      </section>
+    }
+
+    <footer class="brand-footer">
+      <div class="social-centre">SOCIAL:<span>CENTRE</span></div>
+      <div class="merce-logo">'merce</div>
+    </footer>
+  </div>
+</div>
