@@ -1,0 +1,83 @@
+.home-layout {
+  display: grid;
+  grid-template-columns: minmax(190px, 1fr) minmax(0, 590px) 120px;
+  grid-template-rows: auto 1fr;
+  column-gap: 24px;
+}
+
+.masthead { grid-column: 1; grid-row: 1; }
+
+.cards-zone {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  padding-top: 18px;
+  padding-bottom: 85px;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 20px;
+}
+
+.pager {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  padding-top: 27px;
+  color: white;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  white-space: nowrap;
+}
+
+.pager button {
+  border: 0;
+  padding: 4px 3px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+}
+.pager button:disabled { opacity: .25; cursor: default; }
+.pager strong { color: var(--lime); font-size: 21px; font-weight: 500; }
+.pager span { font-size: 11px; opacity: .85; }
+
+@media (max-width: 940px) {
+  .home-layout {
+    grid-template-columns: 150px minmax(0, 1fr) 92px;
+  }
+  .cards-zone { padding-top: 14px; }
+  .posts-grid { gap: 14px; }
+}
+
+@media (max-width: 720px) {
+  .home-layout {
+    display: block;
+  }
+
+  .masthead {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    margin-bottom: 9px;
+  }
+
+  .latest-logo { font-size: 29px; }
+
+  .pager {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    padding: 0;
+  }
+
+  .pager strong { font-size: 15px; }
+  .pager span { font-size: 9px; }
+  .pager button { font-size: 13px; }
+
+  .cards-zone { padding: 0 0 18px; }
+  .posts-grid { grid-template-columns: 1fr; gap: 12px; }
+}
