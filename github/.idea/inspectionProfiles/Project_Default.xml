@@ -1,16 +1,21 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
-    <inspection_tool class="IfCanBeSwitch" enabled="true" level="WARNING" enabled_by_default="true">
-      <option name="minimumBranches" value="3" />
-      <option name="suggestIntSwitches" value="false" />
-      <option name="suggestEnumSwitches" value="false" />
+    <inspection_tool class="DoubleCheckedLocking" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreOnVolatileVariables" value="false" />
     </inspection_tool>
-    <inspection_tool class="LoggerInitializedWithForeignClass" enabled="true" level="WEAK WARNING" enabled_by_default="true">
-      <option name="loggerFactoryMethodName" value="getLogger,getLogger,getLog,getLogger" />
+    <inspection_tool class="LoopConditionNotUpdatedInsideLoop" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreIterators" value="false" />
     </inspection_tool>
     <inspection_tool class="SuspiciousMethodCalls" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="REPORT_CONVERTIBLE_METHOD_CALLS" value="true" />
+    </inspection_tool>
+    <inspection_tool class="groupsTestNG" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="groups">
+        <value>
+          <list size="0" />
+        </value>
+      </option>
     </inspection_tool>
   </profile>
 </component>
